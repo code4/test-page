@@ -183,9 +183,12 @@ footer {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    gap: 50px;
   }
   .products {
     flex-wrap: wrap;
+    padding: 40px 10px;
+    gap: 5px;
   }
   .quotes {
     padding: 100px 50px;
@@ -197,5 +200,9 @@ footer {
   .call-to-action {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .container {
+    padding: 25px;
   }
 }
