@@ -83,6 +83,11 @@ footer {
   color: #e5e7eb;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .btn {
   color: #f9faf8;
   display: block;
@@ -129,15 +134,19 @@ cite {
 
 .products {
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 80px;
+  justify-content: space-evenly;
+  padding: 80px 10px;
+}
+
+.products::-webkit-scrollbar {
+  display: none;
 }
 
 .product {
   display: flex;
   flex-direction: column;
-  max-width: 175px;
+  width: 100%;
+  flex: 50%;
 }
 
 .product img {
@@ -167,4 +176,26 @@ cite {
 
 footer {
   padding: 50px;
+}
+
+@media screen and (max-width: 1299px) {
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .products {
+    flex-wrap: wrap;
+  }
+  .quotes {
+    padding: 100px 50px;
+  }
+  .quote {
+    padding: 0;
+  }
+
+  .call-to-action {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
