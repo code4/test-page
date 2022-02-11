@@ -149,3 +149,18 @@ cite {
 .product p {
   padding: 15px 0;
 }
+
+.call-to-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #3882f6;
+  color: #f9faf8;
+  border-radius: 20px;
+  margin: 50px 0;
+}
+
+.call-to-action .btn {
+  border: 1px solid #f9faf8;
+}
